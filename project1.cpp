@@ -91,9 +91,11 @@ int main()
         sumMegaHeights += megaHeights;
         if(megaHeights > maxMegaHeights)
             maxMegaHeights = megaHeights;
-        fprintf(stderr, "Total Volume: %g\n", totalVolume);
+        //Enable following line to verify that Volume is consistent.
+        //fprintf(stderr, "Total Volume: %g\n", totalVolume);
     }
     double avgMegaHeights = sumMegaHeights/(double)NUMTRIES;
+    fprintf(stderr, "       Total Volume = %g units\n", totalVolume);
     fprintf(stderr, "   Peak Performance = %8.21f MegaHeights/Sec\n", maxMegaHeights);
     fprintf(stderr, "Average Performance = %8.21f MegaHeights/Sec\n", avgMegaHeights);
     return 0;
