@@ -1,4 +1,4 @@
-# CS475-Project1
+# CS475-Project 1
 # Jesse Thoren
 
 The test script will compile, run, and clean up project1 and heights.
